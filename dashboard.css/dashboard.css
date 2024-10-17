@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: beige;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .contenido {
+    background: rgb(54,140,161);
+    background: linear-gradient(90deg, rgba(54,140,161,1) 0%, rgba(114,214,192,1) 43%, rgba(49,208,200,1) 100%);
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .logo {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .menulateral a {
+    color: rgb(80, 78, 78);
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .menulateral a:hover {
+    background-color: rgb(8, 218, 187);
+  }
+  
+  .cerrars {
+    background-color: rgb(109, 112, 109);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .cerrars:hover {
+    background-color: red;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .titulo{
+    margin-top: 20px;
+  }
+  .titulo h1{
+color: white;
+text-align: center;
+margin-top: 20px;
+  }
+  
