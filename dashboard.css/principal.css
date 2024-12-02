@@ -9,10 +9,9 @@ body {
     height: 100vh;
 }
 
-
 header {
-    background-color: rgba(41, 86, 201, 0.7);
-    color: black;
+    background-color: black;
+    color: white;
     padding: 10px 0;
     text-align: center;
 }
@@ -37,7 +36,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-
 .hero {
     color: black;
     text-align: center;
@@ -52,7 +50,6 @@ nav ul li a:hover {
     font-size: 1.2em;
 }
 
-
 #nosotros, #contacto, #cursos {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
@@ -65,7 +62,6 @@ nav ul li a:hover {
     font-size: 2em;
     color: #333;
 }
-
 
 #login-section {
     background-color: rgba(255, 255, 255, 0.8);
@@ -87,12 +83,17 @@ nav ul li a:hover {
 .imagen-contenedor {
     text-align: center;
     margin-bottom: 20px;
+    /* Se mantiene border-radius 30% para un redondeo más suave */
+    border-radius: 30%;
 }
 
+/* Imagen circular */
 .imagen-circular {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100px;   /* Tamaño de la imagen */
+    height: 100px;  /* Tamaño de la imagen */
+    border-radius: 50%;  /* Hace la imagen circular */
+    display: block;
+    margin: 0 auto;
 }
 
 form {
@@ -138,18 +139,10 @@ form p a:hover {
     text-decoration: underline;
 }
 
-
 footer {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
-}
-.imagen-circular {
-    width: 100px;  
-    height: 100px; 
-    border-radius: 0%;
-    display: block;
-    margin: 0 auto;
 }

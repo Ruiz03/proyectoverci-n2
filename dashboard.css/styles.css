@@ -1,0 +1,154 @@
+/* Diseño global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f3f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: 500;
+}
+
+button {
+    background-color: #ffffff;
+    border: none;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #56c7e1;
+    color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Contenedor principal del calendario */
+.calendar-container {
+    width: 320px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.calendar-container:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabecera del calendario */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Tabla de los días */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    width: 14.28%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+th {
+    background-color: #56c7e1;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+td:hover {
+    background-color: #56c7e1;
+    color: white;
+    border-color: #56c7e1;
+}
+
+td.disabled {
+    background-color: #e9e9e9;
+    color: #aaa;
+}
+
+/* Resaltar el día actual */
+td.today {
+    background-color: #f5c518;
+    color: white;
+    font-weight: bold;
+    border-color: #f5c518;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .calendar-container {
+        width: 280px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1.3em;
+        padding: 5px 12px;
+    }
+
+    th,
+    td {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+
+    th,
+    td {
+        font-size: 1em;
+        height: 40px;
+    }
+}
